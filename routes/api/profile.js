@@ -21,7 +21,7 @@ router.get("/me", auth, async (req, res) => {
     }
     res.json(profile);
   } catch (err) {
-    console.error(err.message);
+   console.error(err.message);
     res.status(500).send("Server Error");
   }
 });
@@ -117,7 +117,7 @@ router.get("/", async (req, res) => {
 
     res.json(profiles);
   } catch (error) {
-    console.error(error.message);
+   console.error(error.message);
     res.status(500).send("Server Error");
   }
 });

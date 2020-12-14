@@ -4,8 +4,8 @@
   "description": "MERN Social Network",
   "main": "server.js",
   "scripts": {
-    "start": "node server",
-    "server": "nodemon server",
+    "start": "node --max-http-header-size=80000 server",
+    "server": "nodemon --max-http-header-size=80000 server",
     "client": "npm start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },

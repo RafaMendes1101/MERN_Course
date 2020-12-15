@@ -16,7 +16,7 @@ const Login = ({  login, isAuthenticated }) => {
 
   const onSubmitForm = async (e) => {
     e.preventDefault();
-    login({ email, password });
+    login( email, password );
   };
   //Redirect if logged in
 

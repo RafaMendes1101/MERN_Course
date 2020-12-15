@@ -19,7 +19,11 @@ const Login = ({ login, isAuthenticated }) => {
     login(email, password);
   };
   //Redirect if logged in
+<<<<<<< HEAD
   
+=======
+ 
+>>>>>>> f8cebc90124c4b847e243ec0e2822ab84556ee66
   if (isAuthenticated) {
     return <Redirect to="/dashboard" />;
   }

@@ -19,7 +19,7 @@ const Login = ({  login, isAuthenticated }) => {
     login( email, password );
   };
   //Redirect if logged in
-
+  // isAuthenticated comes undefined and triggers as you type in the password field rather than when submiting the form. Need help here.
   if (isAuthenticated) {
     return <Redirect to="/dasboard" />;
   }
